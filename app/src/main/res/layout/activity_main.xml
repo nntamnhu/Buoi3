@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtFa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Farenheit" />
+
+    <EditText
+        android:id="@+id/edtF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtCel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Celsius" />
+
+    <EditText
+        android:id="@+id/edtCel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFtoC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONVERT TO CELSIUS" />
+
+        <Button
+            android:id="@+id/btnCtoF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONVERT TO FARENHEIT" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bntClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR" />
+</LinearLayout>
